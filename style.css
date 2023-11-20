@@ -1,0 +1,74 @@
+
+*
+{
+    margin: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+nav{
+    display: flex;
+    background-color: #999fe4;
+    justify-content: space-around;
+    padding-top: 1vw;
+    padding-bottom: 1vw ;
+}
+
+span{
+    color: white;
+}
+
+
+
+
+.icon{
+    background: url(../images/sprite3.png) no-repeat;
+    width: 66px;
+	height: 66px;
+    display: inline-block;
+}
+.twt {
+	background: url('imgs/sprite3.png') no-repeat -66px -72px;
+	width: 67px;
+	height: 66px;
+}
+@media screen and (max-width:600px)
+{
+    nav{
+        position: relative;
+        background-color: #7B72CC;
+    }
+
+    .links{
+        display: none;
+        z-index: 1; 
+        position: absolute;
+        background-color: #5148a8;
+        min-width: 100vw;
+        box-shadow: #5148a8;
+
+    }
+
+.pagetitle{
+    background-color: #c4bdff;
+    padding: 1vw;
+    color: white;
+}
+ .links a{
+    color: white;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    display: block;
+ }
+ .links a:hover{
+    background-color: #b7b1ec;
+}
+nav:hover .links{display: block;}
+nav:hover .pagetitle{background-color: #5148a8;}
+}
